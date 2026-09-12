@@ -19,3 +19,7 @@ def page_number(request: HttpRequest, number: int) -> HttpResponse:
 
 def page_name(request: HttpRequest, name: str) -> HttpResponse:
     return HttpResponse(f"<h1>Hello {name.title()}!</h1>")
+
+
+def page_uuid(request: HttpRequest, page_id: str) -> HttpResponse:
+    return HttpResponse(f"<h1>Page: {page_id}</h1>")
