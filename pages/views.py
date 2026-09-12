@@ -11,3 +11,11 @@ def about_page(request: HttpRequest) -> HttpResponse:
 
 def contact_page(request: HttpRequest) -> HttpResponse:
     return HttpResponse("<h1>Contact Page</h1>")
+
+
+def page_number(request: HttpRequest, number: int) -> HttpResponse:
+    return HttpResponse(f"<h1>Page: {number}</h1>")
+
+
+def page_name(request: HttpRequest, name: str) -> HttpResponse:
+    return HttpResponse(f"<h1>Hello {name.title()}!</h1>")
